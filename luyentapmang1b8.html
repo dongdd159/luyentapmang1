@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+</head>
+
+<body>
+<script>
+    let arr=[3,-2,-4,4,5,8,9,1,-8,-129]
+    let sort
+    for (let i=0;i<arr.length;i++){
+        for (let j=1;j<arr.length;j++){
+            if (i<j) {
+                if (arr[i] < arr[j]) {
+                    sort = arr[j]
+                    arr[j] = arr[i]
+                    arr[i] = sort
+                }
+            }
+
+        }
+    }
+    alert(arr.join())
+</script>
+</body>
+</html>
